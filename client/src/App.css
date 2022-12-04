@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+#logo {
+  font-family: 'Billabong', sans-serif;
+  font-size: 38px;
+}
+
+.twinsies {
+  display: flex;
+  padding-top: 3rem;
+  justify-content: center;
+}
+
+button#transparentbtn {
+  background: none;
+  border: none;
+  color: #0d6efd;
+  margin-bottom: 3px;
+}
+
+img.profile {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+img.pic {
+  max-width: 30%;
+  border-radius: 50%;
+}
+
+div#m {
+  padding-left: 20px;
+}
+.card-img-top{
+  height: 400px;
+}
+
+img.postimage {
+  width: 3rem;
+  border-radius: 50%;
+}
