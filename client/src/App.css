@@ -38,3 +38,8 @@ img.postimage {
   width: 3rem;
   border-radius: 50%;
 }
+
+button.close {
+  border: none;
+  margin-left: 25rem;
+}
