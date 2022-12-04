@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-    skip_before_action :authorize, only: [:create, :index]
+    skip_before_action :authorize, only: [:create, :index,:show]
   
       def index
           post = Post.all
@@ -17,6 +17,7 @@ class PostsController < ApplicationController
           post.update!(edit_params)
           render json: post
         end
+
   
         private
   
