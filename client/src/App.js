@@ -36,9 +36,9 @@ function App() {
     <Titlebar profile={user} setUser={setUser}/>
     <Routes>
     <Route path="/" element={<Home profile={user} />} />
-    <Route exact path="/trending" element={<AddPost profile={user}/>} />
-    <Route exact path="/comments" element={<Comments profile={user}/>} />
-    <Route exact path="/profile" element={<Profile profile={user}/>} />
+    <Route  path="/trending" element={<AddPost profile={user}/>} />
+    <Route  path="/comments" element={<Comments profile={user}/>} />
+    <Route  path="/profile" element={<Profile profile={user}/>} />
     </Routes>
     </>
   )

@@ -20,13 +20,13 @@ function Titlebar({ profile, setUser }) {
         <NavLink to="/" id='logo'>Instagram</NavLink>
         <Nav className='fs-3'>
           <NavLink to="/"><AiFillHome /></NavLink>
-          <NavLink tp="#"><TbMessageCircle /></NavLink>
+          <NavLink to="#"><TbMessageCircle /></NavLink>
           <NavLink to="/trending"><CgAddR /></NavLink>
           <div className='d-flex' id='m'>
-          <NavLink to="/profile">
-            <img className='profile' src={profile.profile_pic} alt="e"/>
+          <NavLink>
+            <img className='profile' to="/profile" src={profile.profile_pic} alt="e"/>
           </NavLink>
-          <NavLink href="/"></NavLink>
+          <NavLink to="/"></NavLink>
           </div>
         </Nav>
       </Container>
