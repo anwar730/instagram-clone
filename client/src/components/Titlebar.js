@@ -35,10 +35,10 @@ function Titlebar({ profile, setUser }) {
               <img className="profile" src={profile.profile_pic} alt="e" />
             </NavLink>
             <NavLink className="link-unstyled" to="/"></NavLink>
-          </div>
-          <Nav.Link className="link-unstyled text-dark" href="/">
+            <Nav.Link className="link-unstyled text-dark" href="/">
             <FiLogOut />
           </Nav.Link>
+          </div>
         </Nav>
       </Container>
     </Navbar>
