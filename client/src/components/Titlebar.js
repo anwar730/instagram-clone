@@ -17,16 +17,16 @@ function Titlebar({ profile, setUser }) {
   return (
     <Navbar expand="lg" bg="light">
       <Container>
-        <Navbar.Brand href="/" id='logo'>Instagram</Navbar.Brand>
+        <Navbar.Brand to="/" id='logo'>Instagram</Navbar.Brand>
         <Nav className='fs-3'>
-          <NavLink href="/"><AiFillHome /></NavLink>
-          <NavLink href="#"><TbMessageCircle /></NavLink>
-          <NavLink href="/trending"><CgAddR /></NavLink>
+          <NavLink to="/"><AiFillHome /></NavLink>
+          <NavLink tp="#"><TbMessageCircle /></NavLink>
+          <NavLink to="/trending"><CgAddR /></NavLink>
           <div className='d-flex' id='m'>
-          <NavLink href="/profile">
+          <NavLink to="/profile">
             <img className='profile' src={profile.profile_pic} alt="e"/>
           </NavLink>
-          <NavLink onClick={handleLogoutClick}><FiLogOut /></NavLink>
+          <NavLink href="/"></NavLink>
           </div>
         </Nav>
       </Container>
