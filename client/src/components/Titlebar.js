@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, Container, Nav } from 'react-bootstrap'
 import { AiFillHome } from "react-icons/ai"
+import { NavLink} from "react-router-dom";
 import { CgAddR } from "react-icons/cg"
 import { TbMessageCircle } from "react-icons/tb"
 import { FiLogOut } from "react-icons/fi"
@@ -16,16 +16,16 @@ function Titlebar({ profile, setUser }) {
   return (
     <Navbar expand="lg" bg="light">
       <Container>
-        <Navbar.Brand href="/" id='logo'>Instagram</Navbar.Brand>
+        <NavLink href="/" id='logo'>Instagram</NavLink>
         <Nav className='fs-3'>
-          <Nav.Link href="/"><AiFillHome /></Nav.Link>
-          <Nav.Link href="#"><TbMessageCircle /></Nav.Link>
-          <Nav.Link href="/trending"><CgAddR /></Nav.Link>
+          <NavLink href="/"><AiFillHome /></NavLink>
+          <NavLink href="#"><TbMessageCircle /></NavLink>
+          <NavLink href="/trending"><CgAddR /></NavLink>
           <div className='d-flex' id='m'>
-          <Nav.Link href="/profile">
+          <NavLink href="/profile">
             <img className='profile' src={profile.profile_pic} alt="e"/>
-          </Nav.Link>
-          <Nav.Link onClick={handleLogoutClick}><FiLogOut /></Nav.Link>
+          </NavLink>
+          <NavLink onClick={handleLogoutClick}><FiLogOut /></NavLink>
           </div>
         </Nav>
       </Container>
