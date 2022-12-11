@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.7.4"
 
 gem 'active_model_serializers'
+gem 'rack-cors'
 
 gem 'bcrypt', '~> 3.1.7'
 
