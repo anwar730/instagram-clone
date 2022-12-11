@@ -12,7 +12,7 @@ function LoginForm({ onLogin, setShowLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/login", {
+    fetch("https://instagram-clone-production.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

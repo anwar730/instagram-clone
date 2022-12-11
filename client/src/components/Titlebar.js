@@ -7,7 +7,7 @@ import { FiLogOut } from "react-icons/fi"
 
 function Titlebar({ profile, setUser }) {
   function handleLogoutClick() {
-    fetch("/logout", { method: "DELETE" }).then((r) => {
+    fetch("https://instagram-clone-production.up.railway.app/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
         setUser(null);
       }

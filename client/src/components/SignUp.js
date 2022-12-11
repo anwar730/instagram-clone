@@ -16,7 +16,7 @@ function Signup({ onLogin, setShowLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/register", {
+    fetch("https://instagram-clone-production.up.railway.app/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

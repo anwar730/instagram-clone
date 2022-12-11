@@ -10,7 +10,7 @@ function Home({ profile }) {
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-      fetch("/posts")
+      fetch("https://instagram-clone-production.up.railway.app/posts")
         .then((r) => r.json())
         .then(setPost);
     }, []);

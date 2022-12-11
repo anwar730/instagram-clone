@@ -13,7 +13,7 @@ function AddPost({ profile, posts }) {
         e.preventDefault();
         setErrors([]);
         setIsLoading(true);
-        fetch("/createpost", {
+        fetch("https://instagram-clone-production.up.railway.app/createpost", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

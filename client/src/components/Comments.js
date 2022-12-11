@@ -11,7 +11,7 @@ function Comments({ onClose, profile, post}) {
   function handleSubmit(e) {
       setErrors([]);
       setIsLoading(true);
-      fetch("/postcomments", {
+      fetch("https://instagram-clone-production.up.railway.app/postcomments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

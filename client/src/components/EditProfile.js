@@ -11,7 +11,7 @@ function EditProfile({ profile }) {
 
     function handleSubmit() {
         setIsLoading(true);
-        fetch("/update", {
+        fetch("https://instagram-clone-production.up.railway.app/update", {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
