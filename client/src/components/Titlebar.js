@@ -1,13 +1,14 @@
 import React from 'react'
 import { AiFillHome } from "react-icons/ai"
-import { NavLink} from "react-router-dom";
+import { Navbar, Container, Nav } from 'react-bootstrap'
 import { CgAddR } from "react-icons/cg"
+import { NavLink} from "react-router-dom";
 import { TbMessageCircle } from "react-icons/tb"
 import { FiLogOut } from "react-icons/fi"
 
 function Titlebar({ profile, setUser }) {
   function handleLogoutClick() {
-    fetch("https://instagram-clone-production.up.railway.app/logout", { method: "DELETE" }).then((r) => {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
         setUser(null);
       }
@@ -16,7 +17,7 @@ function Titlebar({ profile, setUser }) {
   return (
     <Navbar expand="lg" bg="light">
       <Container>
-        <NavLink href="/" id='logo'>Instagram</NavLink>
+        <Navbar.Brand href="/" id='logo'>Instagram</Navbar.Brand>
         <Nav className='fs-3'>
           <NavLink href="/"><AiFillHome /></NavLink>
           <NavLink href="#"><TbMessageCircle /></NavLink>
