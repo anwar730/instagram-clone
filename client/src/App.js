@@ -30,6 +30,7 @@ function App() {
   }, []);
 
   if (!user) return <LoginSwitch onLogin={setUser} />;
+  
   return  (
     <>
     <Titlebar profile={user} setUser={setUser}/>

@@ -44,7 +44,7 @@ function Signup({ onLogin, setShowLogin }) {
       <div className='w-100' style={{ maxWidth: "370px" }}>
          <div className='text-center pb-3'>
             <h2 style={{fontSize: "65px"}} id="logo">Instagram</h2>
-            <p>sign up to get started and enjoy the platform with your friends</p>
+            <p>Sign up to get started and enjoy the platform with your friends</p>
         </div>
           {errors.map((err) => (
           <Alert variant="danger">{err}</Alert>
