@@ -16,7 +16,7 @@
  - [Live Link](#Live-Link)
  - [Technology  Used](#technology-Used)
  - [Licence](#licence)
- - [Authors Info](#Authors-Info)
+ 
  
  ## Description
  <p>This is an instagram clone where users can add their posts and can also view other user's posts like them and comment on them </p>
@@ -30,7 +30,7 @@ As a user of the application,you will be able to :
 5.  Edit profile
 6. Like a post
 
-## Behaviour Driven Development|
+## Behaviour Driven Development
 | Behaviour      | Input        | Output       |
 | :------------- | :----------: | -----------: |
 | A user can signup/log in depending on if they have an already existing account or not | A user can add their posts | user can view the  posts posted by other users  |
@@ -49,7 +49,7 @@ As a user of the application,you will be able to :
  ****
 
 ### Live Link
-- Click this link to view the live application :
+- Click this link to view the live application :https://instagram-clone-anwar730.vercel.app/
 - 
 ### Technology  Used
 * React - which was used to develop the structure and functionality of the pages.
