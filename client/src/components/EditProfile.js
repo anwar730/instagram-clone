@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import { Routes, Route, useNavigate, NavLink } from "react-router-dom";
 
 function EditProfile({ profile }) {
     const [username, setUsername] = useState(profile.username);
@@ -7,6 +8,7 @@ function EditProfile({ profile }) {
     const [profilepic, setProfilePic] = useState(profile.profile_pic);
     // const [errors, setErrors] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+  let navigate = useNavigate();
 
 
     function handleSubmit() {
@@ -27,6 +29,7 @@ function EditProfile({ profile }) {
             r.json().then((data) => console.log(data));
           } 
         });
+        navigate('/')
       }
   return (
     <div className='w-100' id='ting' style={{ maxWidth: "370px" }}>
