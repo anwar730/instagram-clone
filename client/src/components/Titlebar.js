@@ -17,7 +17,7 @@ function Titlebar({ profile, setUser }) {
   return (
     <Navbar expand="lg" bg="light">
       <Container>
-        <Navbar.Brand to="/" id='logo'>Instagram</Navbar.Brand>
+        <NavLink to="/" id='logo'>Instagram</NavLink>
         <Nav className='fs-3'>
           <NavLink to="/"><AiFillHome /></NavLink>
           <NavLink tp="#"><TbMessageCircle /></NavLink>
